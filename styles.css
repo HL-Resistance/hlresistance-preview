@@ -56,13 +56,18 @@ body {
   float: right;
 }
 
+/*Hololive About Page Body Sections*/
 .first-sect {
-  padding-top: 500px;
+  padding-top: 100px;
   padding-left: 100px;
   padding-right: 100px;
-  text-align: center;
+  text-align: left;
   background: #FFFFFF;
   font-size: 30px;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top: 200px;
+  margin-bottom: 200px;
 }
 
 /*Mobile Users*/
