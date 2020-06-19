@@ -16,6 +16,10 @@ body {
   padding: 0px 10px;
 }
 
+.logo-image {
+  max-height: 50px;
+}
+
 .header a {
   float: left;
   color: black;
@@ -48,6 +52,10 @@ body {
 }
 
 @media screen and (max-width: 500px) {
+  .logo-image {
+    max-height: 35px;
+  }
+
   .header a {
     float: none;
     display: block;
