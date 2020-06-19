@@ -56,6 +56,14 @@ body {
   float: right;
 }
 
+.first-sect {
+  padding-top: 500px;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
+  background: #FFFFFF;
+  font-size: 30px;
+}
 
 /*Mobile Users*/
 @media screen and (max-width: 500px) {
