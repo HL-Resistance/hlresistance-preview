@@ -84,9 +84,16 @@ body {
   height: 100%;
   background: #FFFFFF;
   opacity: 0.95;
-  margin: 2em 12em 2em 12em;
+  margin: 2em 10em 2em 10em;
   padding: 0.5em;
 } 
+
+/*Lower Resolution Desktop / Tablets*/
+@media screen and (max-width: 720px) {
+  .about_first_sect {
+    margin: 1em 2em 1em 2em;
+  } 
+}
 
 /*Mobile Users*/
 @media screen and (max-width: 500px) {
@@ -103,4 +110,8 @@ body {
   .header-right {
     float: none;
   }
+
+  .about_first_sect {
+    margin: 0.5em 2em 0.5em 2em;
+  } 
 }
