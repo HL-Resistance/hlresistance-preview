@@ -57,12 +57,30 @@ body {
 }
 
 /*Hololive About Page Body Sections*/
-.first-sect {
-  padding: 100px 100px 0px 100px;
-  text-align: left;
+
+.about-grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "first-sec";
+  height: 100vh;
+}
+
+.about_first_sect {
+  grid-area: first-sec; 
+  height: 100%;
   background: #FFFFFF;
-  font-size: 30px;
-  margin: 200px 300px 200px 300px;
+  opacity: 0.95;
+  margin: 2em 15em 2em 15em;
+  padding: 0.5em;
+} 
+
+/*Lower Resolution Desktop / Tablets*/
+@media screen and (max-width: 720px) {
+  .about_first_sect {
+    margin: 1em 2em 1em 2em;
+  } 
 }
 
 /*Mobile Users*/
@@ -80,4 +98,8 @@ body {
   .header-right {
     float: none;
   }
+
+  .about_first_sect {
+    margin: 0.5em 2em 0.5em 2em;
+  } 
 }
