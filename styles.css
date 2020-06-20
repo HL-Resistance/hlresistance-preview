@@ -67,24 +67,31 @@ body {
   height: 100vh;
 }
 
-.about_first_sect {
-  grid-area: first-sec; 
+.about-first-sect {
+  grid-area: first-sec;
   height: 100%;
   background: #FFFFFF;
   opacity: 0.95;
   margin: 2em 15em 2em 15em;
   padding: 0.5em;
-} 
+}
+
+/*Medium Resolution Desktop*/
+@media only screen and (max-width: 800px) {
+  .about-first-sect {
+    margin: 2em 8em 2em 8em;
+  }
+}
 
 /*Lower Resolution Desktop / Tablets*/
-@media screen and (max-width: 720px) {
-  .about_first_sect {
-    margin: 1em 2em 1em 2em;
-  } 
+@media only screen and (max-width: 640px) {
+  .about-first-sect {
+    margin: 1em 5em 1em 5em;
+  }
 }
 
 /*Mobile Users*/
-@media screen and (max-width: 500px) {
+@media only screen and (max-width: 480px) {
   .logo-image {
     max-height: 35px;
   }
@@ -99,7 +106,7 @@ body {
     float: none;
   }
 
-  .about_first_sect {
+  .about-first-sect {
     margin: 0.5em 2em 0.5em 2em;
-  } 
+  }
 }
