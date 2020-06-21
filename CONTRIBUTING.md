@@ -116,6 +116,10 @@ This is actually a menu, but you probably won't need to use the items in the men
 
 When you have committed your files and are ready to push it to GitHub you can push this button. It'll show a number depending on how many commits you are pushing.
 
+![Push error](https://cdn.discordapp.com/attachments/723876866523529276/724207475464863744/unknown.png)
+
+When pushing you may encounter this error, click on "push and set the current branch's upstream" and it should get pushed now.
+
 #### The Checkout button
 ![Checkout button](https://cdn.discordapp.com/attachments/723876866523529276/724194180683006022/unknown.png)
 
@@ -142,7 +146,6 @@ Follow the naming scheme of `username-change_name`, so for example: `goldelysium
 If you made changes to files, it'll show "Uncommittted changes" in the git timeline. Write a commit message with a title on the first line, skip a line and then you can put a detailed message if needed. Sometimes only a title is enough.
 
 Click on stage all if you want to commit all the files you've changed, otherwise select the files or even the lines that you want to commit. After you've done that you can commit and push it.
-
 
 ## Git Commit Messages
 
