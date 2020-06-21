@@ -114,7 +114,7 @@ This is actually a menu, but you probably won't need to use the items in the men
 #### The Push button
 ![Push button](https://cdn.discordapp.com/attachments/723876866523529276/724190612382941215/unknown.png)
 
-When you have committed your files and are ready to push it to GitHub you can push this button.
+When you have committed your files and are ready to push it to GitHub you can push this button. It'll show a number depending on how many commits you are pushing.
 
 #### The Checkout button
 ![Checkout button](https://cdn.discordapp.com/attachments/723876866523529276/724194180683006022/unknown.png)
