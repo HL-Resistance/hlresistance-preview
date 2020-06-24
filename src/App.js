@@ -24,7 +24,7 @@ export class App extends React.Component {
               <Route path="/creative" component={Creative}></Route>
               <Route path="/translation" component={Translation}></Route>
               <Route component={NoMatch}></Route>
-              {/* //if end of path does not match any of the path="/xxx" will routh to NoMatch.js */}
+              {/* //if end of path does not match any of the path="/xxx" will route to NoMatch.js */}
             </Switch>
           </Router>
         </HashRouter>
