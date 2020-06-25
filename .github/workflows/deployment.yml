@@ -3,26 +3,15 @@ on:
   push:
     branches:
       - master
+
+env:
+  FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+
 jobs:
   deploy:
     runs-on: ubuntu-20.04
-    strategy:
-      matrix:
-        node-version: [12.x]
     steps:
     - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
+    - uses: superfly/flyctl-actions@1.0
       with:
-        node-version: ${{ matrix.node-version }}
-    - name: Install packages
-      run: npm ci
-    - name: Build project
-      run: npm run build --if-present
-    - name: Add CNAME
-      run: echo 'frontend-preview.hlresistance.me' > ./build/CNAME 
-    - name: Deploy to gh-pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-        publish_dir: ./build
+        args: "deploy"
