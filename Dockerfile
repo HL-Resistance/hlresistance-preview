@@ -23,7 +23,7 @@ RUN cp -r /tmp/build/* . && \
     rm -rf /tmp
 
 # Install webserver, following https://create-react-app.dev/docs/deployment
-RUN npm i serve --no-save
+RUN npm i serve -g
 
 # Use port 8080 as requested: https://fly.io/docs/getting-started/node/
-CMD [ 'serve', '-s', '/app', '-l', '8080' ]
+CMD ["serve","-s","/app","-l","8080"]
