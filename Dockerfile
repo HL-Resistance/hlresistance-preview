@@ -19,11 +19,14 @@ RUN npm run build --if-present
 WORKDIR /app
 
 # Copy the build files and remove the temp folder
-RUN cp -r /tmp/build/* . && \
+RUN cp -r /tmp/build/ build/ && \
     rm -rf /tmp
 
+# Copy the webserver
+COPY web/index.js .
+
 # Install webserver, following https://create-react-app.dev/docs/deployment
-RUN npm i serve -g
+RUN npm i express
 
 # Use port 8080 as requested: https://fly.io/docs/getting-started/node/
-CMD ["serve","-s","/app","-l","8080"]
+CMD ["node", "index.js"]
