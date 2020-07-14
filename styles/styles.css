@@ -1,5 +1,5 @@
 body {
-  background-image: url("hololive_background.png");
+  background-image: url("/hololive_background.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;

@@ -34,3 +34,6 @@ pids
 
 # IntelliJ Idea
 .idea/
+
+# NextJS
+.next/
