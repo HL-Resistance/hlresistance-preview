@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './NavigationBar.module.css';
 import logo from '../public/image/Logo.png';
 import { Navbar, Nav } from 'react-bootstrap';
