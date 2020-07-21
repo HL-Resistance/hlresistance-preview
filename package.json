@@ -9,11 +9,13 @@
     "export": "next export"
   },
   "dependencies": {
+    "mongodb": "^3.5.9",
     "next": "9.4.4",
     "next-images": "^1.4.0",
     "react": "16.13.1",
     "react-bootstrap": "^1.2.2",
     "react-dom": "16.13.1",
-    "react-router-dom": "^5.2.0"
+    "react-router-dom": "^5.2.0",
+    "shortid": "^2.2.15"
   }
 }
