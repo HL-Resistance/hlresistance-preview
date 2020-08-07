@@ -9,7 +9,7 @@
     "export": "next export"
   },
   "dependencies": {
-    "mongodb": "^3.5.9",
+    "mongodb": "^3.6.0",
     "next": "9.4.4",
     "next-images": "^1.4.1",
     "react": "16.13.1",
